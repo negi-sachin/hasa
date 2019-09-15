@@ -28,6 +28,10 @@ app.get("/", function(req, res){
    res.redirect("/blogs"); 
 });
 
+app.get("/home", function(req, res){
+    res.redirect("/home"); 
+ });
+
 // INDEX ROUTE
 app.get("/blogs", function(req, res){
    Blog.find({}, function(err, blogs){
