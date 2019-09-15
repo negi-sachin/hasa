@@ -29,7 +29,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/home", function(req, res){
-    res.redirect("/home"); 
+    res.render("home"); 
  });
 
 // INDEX ROUTE

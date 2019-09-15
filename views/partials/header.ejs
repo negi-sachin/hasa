@@ -21,7 +21,15 @@
             <div class="ui container">
                     <i class='fas fa-poo-storm float-left' style='font-size:48px;color:rgb(219, 23, 23)'> </i>
                 <div class="header item"> Disaster</div>
-                <a href="/" class="item">Home</a>
-                <a href="/blogs/new" class="item">New Plan</a>
+                <a href="/home" class="item">Home<i class='fas fa-home ml-2' style='font-size:20px;'> </i></a>
+                <a href="/blogs" class="item">Plans List<i class='fas fa-clipboard-list ml-2' style='font-size:20px'></i></a>
+                <a href="/blogs/new" class="item">New Plan<i class='far fa-plus-square ml-2' style='font-size:20px'></i></a>
+                <a href="#" class="item" data-toggle="popover" title="Helpline Number" data-placement="bottom" data-trigger="focus" data-content="+91-11-23782698(O) +91-11-23382365 (Fax)">Helpline Number<i class='fas fa-phone ml-2' style='font-size:20px'></i></a>
             </div>
         </div>
+
+        <script>
+                $(document).ready(function(){
+                  $('[data-toggle="popover"]').popover();
+                });
+                </script>
