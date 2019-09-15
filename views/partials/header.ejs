@@ -26,10 +26,29 @@
                 <a href="/blogs/new" class="item">New Plan<i class='far fa-plus-square ml-2' style='font-size:20px'></i></a>
                 <a href="#" class="item" data-toggle="popover" title="Helpline Number" data-placement="bottom" data-trigger="focus" data-content="+91-11-23782698(O) +91-11-23382365 (Fax)">Helpline Number<i class='fas fa-phone ml-2' style='font-size:20px'></i></a>
             </div>
+            
         </div>
-
-        <script>
+        <div class="" style="position:fixed;bottom: 10;right:10;z-index: 2;">
+        <div class="popup" style="display:none;">
+                <iframe
+                allow="microphone;"
+                width="350"
+                height="430"
+                src="https://console.dialogflow.com/api-client/demo/embedded/fe27b09d-6b81-42d6-bae1-f43997fb20cb">
+            </iframe>
+             </div>
+             <button class="btn btn-info " style="font-size: 20px;">Chat with us<i class='far fa-comment ml-2' style='font-size:22px'></i></button>
+            </div>
+    </body>
+<script>
                 $(document).ready(function(){
                   $('[data-toggle="popover"]').popover();
                 });
-                </script>
+// chatbot js
+                const button = document.querySelector('button');
+const popup = document.querySelector('.popup');
+
+button.addEventListener('click', ()=>{
+  popup.style.display === 'none' ? popup.style.display = 'block' : popup.style.display = 'none';
+})
+</script>
